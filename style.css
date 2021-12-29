@@ -2,8 +2,191 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
+body{
+    background-color: #000;
+}
+.main-content{
+    display: grid;
+    min-height: 1000px;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+background-color: #FF6A00;
+grid-column:span 1;
+}
+.right-section{
+    background-color: #fff;
+    grid-column:span 1/span 2;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    border-style:solid;
+    border-width: 5px;
+    border-color: #fff;
+    width: 60%;
+    border-radius: 30%;
+}
+@keyframes rotate {
+    50% {transform: rotate(45deg);}
+  }
+.profile-image:hover{
+    display: block;
+    margin: auto;
+    border-style:solid;
+    border-width: 5px;
+    border-color: #fff;
+    width: 60%;
+    border-radius: 30%;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+.light{
+    color: #fff;
+}
+.dark{
+    color:#000;
+}
+.accent{
+color:#FF6A00;
+}
+.accent2{
+    color:#717073;
+}
+.seperator{
+    border: 1px solid #FFF;
+}
+.seperator-dashed{
+    border-top: 2px dotted #717073;
+    margin: 30px 25px;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    
+}
+.contact-info{
 
-/* Write CSS code below */
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.skill-container{
+    color: #fff;
+    line-height: 2em;
+}
+.progress-bar{
+    border-style: solid;
+    width: 1px;
+    border-color: #fff;
+    height: 4px;
+}
+.social-media{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.social-media a{
+    font-size:28px;
+    color:#fff;
+    text-decoration: none;
+}
+.social-media a:hover{
+    font-size:25px;
+    color:#000;
+    text-decoration: none;
+}
+.personal-details{
+    font-weight: 500;
+    color: #000;
+    padding-top: 1em;
+    text-transform: uppercase;
+    font-size: 0.65em;
+    display: flex;
+    flex-direction: column;
+    
+}
+.personal-details a{
+    font-size:1.1rem;
+    line-height:normal;
+    text-decoration: none;
+    color: #fff;
+}
+.personal-details a:hover{
+    font-size:1.1rem;
+    line-height:normal;
+    text-decoration: none;
+    color: #000;
+}
+table{
+    border-spacing: 1em;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.paragraph{
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 2em;
+    font-style: italic;
+    padding: 0.5rem;
+}
+.education-content{
+    padding: 0.25rem 0.5rem ;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 500;
+}
+.exp{
+    padding: 0.25rem 0.5rem ;
+    font-size: .75rem;
+    font-weight: 500;
+}
+@media(max-width:674px){
+    .main-content{
+        grid-template-columns:repeat(1, 1fr);
+    }
+    
+}

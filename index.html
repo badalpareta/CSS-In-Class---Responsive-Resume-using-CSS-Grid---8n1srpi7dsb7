@@ -1,35 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">        
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Resume</title>
-        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Resume using CSS Grid</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/aa79680b31.js" crossorigin="anonymous"></script>
 
-    </head>
-    <body>
-        <main class="main-content" contenteditable="true">
-            <section class="left-section">
-                 <div class="left-content">
-                    <!-- Write code for the left section here -->
+</head>
+<body>
+    
+    <main class="main-content">
+        <section class="left-section">
+            <div class="left-content">
+                <div class="profile-details">
+                    <div class="profile">
+                        <img src="Media\Profile.jpg" alt="Profile Image" class="profile-image">
+                    </div>
+                    <h2 class="name light">Badal Pareta</h2>
+                    <h3 class="designation light">SDE-I</h4>
+                    <hr class="seperator">
+                    <h4 class="description dark">Developer - Designer</h5>
+                </div>
+                <div class="contact-info">
+                    <div class="contect-item">
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/in/badalpareta/"class="fab fa-linkedin"></a>
+                            <a href="https://github.com/badalpareta"class="fab fa-github-square"></a>
+                            <a href="https://www.facebook.com/badal2393"class="fab fa-facebook-square"></a>
+                            <a href="https://twitter.com/pareta_badal"class="fab fa-twitter-square"></a>  
+                        </div>
+                        <div class="personal-details">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center;"><a href="mailto:badalpareta@outlook.com"class="fas fa-envelope"></a> </td>
+                                        <td>badalpareta@outlook.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;"><a href="tel:+919521585541"class="fas fa-phone-square-alt"></a></td>
+                                        <td>+91-9521585541</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: center;"><a href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8851935,75.720518,12z/data=!3m1!4b1!4m5!3m4!1s0x396c4adf4c57e281:0xce1c63a0cf22e09!8m2!3d26.9124336!4d75.7872709"class="fas fa-map-marker-alt"></a></td>
+                                        <td>Jaipur, Rajasthan</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <h2 class="skills light">Skills</h2>
+                <div class="skill-container">
+                    <div class="skills-content">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>HTML</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>CSS</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>JAVASCRIPT</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width:70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>JAVA</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>ASP.NET-C#</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width:75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>SQL</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width:60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>NODE JS</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width:40%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <h3>PYTHON</h3>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width:35%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </section>
 
-            <section class="right-section"> 
-                <div class="right-main-content">
-                    
-                    <!-- Write code for the right section here -->
-                </div>
-            </section>
-        </main>
-    </body>
-</html> 
+
+        </section>
+        <section class="right-section">
+            <div class="right-main-content">
+                <section class="about-section">
+                    <h2 class="right-title">About Me</h2>
+                    <p class="paragraph accent2">I am looking for a responsible career opportunity, where I can efficiently utilize my technical skills, continuously learning attitude, and spiritual intelligence I possess for me individually as well as organizational growth to the best of my ability.
+                        <span class="accent">Please enjoy my work & feel free to contact me.</span></p>
+                </section>
+                <hr class="seperator-dashed">
+                <section class="about-section">
+                    <h2 class="right-title">Education</h2>
+                    <table class="education-content"width="100%">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;"width="25%" class="accent">2007-2008<br><span class="dark">X<sup>TH</sup></span></td>
+                                <td width="75%" class="accent2"><span class="dark">Atomic Energy Central School-4</span><br>CBSE Secondary, Science</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"width="25%" class="accent">2009-2010<br><span class="dark">XII<sup>TH</sup></span></td>
+                                <td width="75%" class="accent2"><span class="dark">Shiv Jyoti Senior Secondary School</span><br>RBSE Senior Secondary, PCM</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"width="25%" class="accent">2011-2015<br><span class="dark">B.Tech</span></td>
+                                <td width="75%" class="accent2"><span class="dark">Vivekananda Institute of Technology</span><br>CSE-Dropped Out</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"width="25%" class="accent">2021-2024<br><span class="dark">BCA</span></td>
+                                <td width="75%" class="accent2"><span class="dark">Amity University Distance Learning</span><br>Bachelor's of Computer Application- Machine Learning</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <hr class="seperator-dashed">
+                <section class="about-section">
+                    <h2 class="right-title">Experience</h2>
+                    <div class="exp accent">2014 — PRESENT</div>
+                    <div class="exp dark">Freelance Graphic Designer (fiverr.com)</div>
+                    <div class="exp accent2">Forte in Product Design & Technology Print-Ready Designs</div>
+                    —
+                    <div class="exp accent">JAN 2020 — NOV 2020</div>
+                    <div class="exp dark">Creative Editor at Culenz India</div>
+                    <div class="exp accent2">Virtual Reality & 360 Videos</div>
+                    —
+                    <div class="exp accent">MARCH 2020 — DEC 2020</div>
+                    <div class="exp dark">Video Editor for Rangae Moda Films Pvt. Ltd.</div>
+                    <div class="exp accent2">White Board Animation & Real Estate Videos</div>
+                    —
+                    <div class="exp accent">MARCH 2021-PRESENT</div>
+                    <div class="exp dark">Creative Designer for Ora Essentials India Pvt. Ltd.</div>
+                    <div class="exp accent2">Product Packing, Print-Ready, UI/UX Designs</div>
+                    —
+                </section>
+                
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
