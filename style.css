@@ -110,9 +110,7 @@ color:#FF6A00;
     line-height: 2em;
 }
 .progress-bar{
-    border-style: solid;
-    width: 1px;
-    border-color: #fff;
+    border:1px solid white;
     height: 4px;
 }
 .social-media{
